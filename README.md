@@ -14,7 +14,7 @@ Implementation of AStar path planning algorithm.
 ``` bash
 mkdir -p <your_workspace>/src
 cd <your_workspace>/src
-## clone package from github or copy into <your_workspace>/src
+# clone package from github or copy into <your_workspace>/src
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
@@ -26,6 +26,7 @@ catkin_make
 ```
 - Launch node and world
 ``` bash
+# Note the origin is at bottom left of the environment
 source devel/setup.bash
 roslaunch astar_ros_pathplanning astar.launch start:="[1,1,0]" goal:="[2,4,0]" rpm:="[10,10]" clearance:="0.1"
 ```
