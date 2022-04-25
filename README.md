@@ -45,7 +45,7 @@ python3 main.py --start 1 1 0 --goal 3 4 0 --rpm 10 10 --clearance 0.1
 
 ### Gazebo Simulation
 <p align="center">
-<img src="results/gazebo_planning.png"/>
+<img src="results/pathexplore.gif"/>
 </p>
 
 ### Exploration
@@ -57,3 +57,6 @@ python3 main.py --start 1 1 0 --goal 3 4 0 --rpm 10 10 --clearance 0.1
 <p align="center">
 <img src="results/final_path.png"/>
 </p>
+
+
+## Results drive [link](https://drive.google.com/drive/folders/1w2RC5oesQH3v8CEqEWXiQlP5M5i1X1QA?usp=sharing)
