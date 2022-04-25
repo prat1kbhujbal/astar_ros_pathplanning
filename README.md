@@ -26,6 +26,7 @@ catkin_make
 ```
 - Launch node and world
 ``` bash
+source devel/setup.bash
 roslaunch astar_ros_pathplanning astar.launch start:="[1,1,0]" goal:="[2,4,0]" rpm:="[10,10]" clearance:="0.1"
 ```
 
