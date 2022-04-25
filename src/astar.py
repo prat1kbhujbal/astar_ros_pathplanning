@@ -142,8 +142,6 @@ def planning(node, map, goal_node, step_size, rpms, clearance):
     action = actions(node, step_size, rpms)
     explore = []
     for i, path in enumerate(action):
-        # print(path[0])
-        # print(verify_node(path[0], clearance))
         if verify_node(path[0], clearance):
             if check_obs(path[0][0], path[0][1], clearance):
                 explore.append(
@@ -223,7 +221,7 @@ def astar(start, goal, map_grid, rpm, clearance):
             node = current_node[2]
             cn.append(node)
             if goal_reached(node, goal_node, goal_tolerance):
-                print("Goal Reached !!")
+                print("Path Planned!!")
                 goal_node.parent = node.parent
                 goal_node.cost = node.cost
                 break
@@ -263,5 +261,5 @@ def astar(start, goal, map_grid, rpm, clearance):
                     plt.plot([Xn, xn1], [Yn, yn1], color="r")
                     Xn, Yn = xn1, yn1
                 plt.pause(0.01)
-        
+
         return action_a

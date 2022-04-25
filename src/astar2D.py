@@ -142,8 +142,6 @@ def planning(node, map, goal_node, step_size, rpms, clearance):
     action = actions(node, step_size, rpms)
     explore = []
     for i, path in enumerate(action):
-        # print(path[0])
-        # print(verify_node(path[0], clearance))
         if verify_node(path[0], clearance):
             if check_obs(path[0][0], path[0][1], clearance):
                 explore.append(
